@@ -1,0 +1,47 @@
+#background{
+  background-color: lightblue;
+  border:2px solid red;
+  width:768px;
+  height:10000px;
+  margin:0 auto;
+  position:relative;
+
+}
+#heading{
+width:768px;
+height:500px;
+position:absolute;
+z-index:3;
+}
+#rin{
+width:80px;
+height:150px;
+  position:relative;
+  top:700px;
+  left: 0px;
+  z-index:2;
+}
+#house1{
+  width:400px;
+  height:300px;
+position:absolute;
+z-index:3;
+top:700px;
+left:-100px;
+}
+/*#house2{
+  width:400px;
+  height:300px;
+position:relative;
+z-index:1;
+top:700px;
+left:0px;
+}*/
+#steps{
+  width:100px;
+  height:50px;
+  position:absolute;
+  top:990px;
+  left:300px;
+  z-index:1;
+}
