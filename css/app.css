@@ -1,5 +1,5 @@
 #background{
-  border:2px solid #000000;
+  /*border:2px solid #000000;*/
   width:768px;
   height:10000px;
   margin:0 auto;
@@ -15,10 +15,15 @@ z-index:10;
 }
 
 
-/*tripping rin..runs across screen*/
+/*trippingRin..runs across screen*/
 
-#rinrin{
-
+#trippingRin{
+  width:170px;
+  height:170px;
+  position:absolute;
+  z-index:3;
+  top:820px;
+  left:0px;
 }
 #mom{
 width:130px;
@@ -38,36 +43,29 @@ top:700px;
 left:0px;
 }
 
-#mouse{
+#greetMouse{
   width:130px;
   height:190px;
   position:absolute;
   left:500px;
   top:1200px;
 }
-#backOfRin{
+#greetRin{
   width:300px;
   height:390px;
   position:absolute;
   left:100px;
   top:1500px;
 }
-#ladyRat{
+#icon {
   transform:scaleX(-1);
-  width:768px;
-  height:400px;
-position:absolute;
-top:2400px;
-z-index:2;
+  width:568px;
+  height:300px;
+  position:absolute;
+   top:2400px;
+   left:0px;
 }
-#ladyRat2{
-  transform:scaleX(-1);
-  width:768px;
-  height:400px;
-position:absolute;
-top:2400px;
-z-index:2;
-}
+
 #waving{
   width:500px;
   height:450px;
@@ -108,13 +106,6 @@ z-index:4
   top:4000px;
   z-index:2;
 }
-/*#cat{
-width:690px;
-height:500px;
-position:sticky;
-top:290px;
-  z-index:2;
-}*/
 
 #shocked{
   width:200px;
@@ -179,13 +170,4 @@ z-index:2;
   left:-10px;
   top:6500px;
   z-index:3;
-}
-
-
-/*/////test*/
-#icon {  width:768px;
-  height:400px;
-  position:absolute;
-   top:2400px;
-   left:0px;
 }
