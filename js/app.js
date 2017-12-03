@@ -1,10 +1,13 @@
 var icon = document.getElementById("icon");
 var stickyCat = document.getElementById("stickyCat");
 var trippingRin = document.getElementById("trippingRin");
-var greetMouse = document.getElementById("greetMouse")
-var greetRin = document.getElementById("greetRin")
-
-////image switch for ladyRatHouse///////////////////
+var greetMouse = document.getElementById("greetMouse");
+var greetRin = document.getElementById("greetRin");
+var rockMouse = document.getElementById("rockMouse");
+var grassMouse = document.getElementById("grassMouse");
+var waving = document.getElementById("waving");
+var shocked = document.getElementById("shocked");
+var escape = document.getElementById("escape");
 window.onscroll = function(){
 
       var y = window.pageYOffset;
@@ -14,35 +17,32 @@ window.onscroll = function(){
 
 
 ////////////this makes Rinrin run across screen
-      if( y > 0){
-        trippingRin.style.left =  y + "px";
-      }
-      else{
-        trippingRin.style.left = "0px";
-      }
+        trippingRin.style.left =200 + y *.30 + "px";
 
 
 
+      /////////////Rinrin and Mouse meet--PARALLAX////
+        /////////this parallaxes mouse
+              greetMouse.style.top = 1800 + y * -.40 + "px";
+              /////this paralaxxes props behind mouse
+                rockMouse.style.top = 1780 + y * -.30 + "px";
+                grassMouse.style.top = 1800 + y * -.40 + "px";
 
-      /////////////Rinrin and Mouse meet////
-            if( y > 800){
-              // greetMouse.style.top = 400 + y + "px";
-               greetMouse.style.top = 8000 - y * .8+ "px";
-            }else{
-              greetMouse.style.top = "1200px";
-            }
+          ////////this parallaxes Rinrin
+              greetRin.style.top = 2700 + y * -.99 + "px";
 
 
 
 
 ////////////image switch for ladyRatHouse///////////////////
-      if(y > 2000){
+      if(y > 2300){
             icon.src="images/ladyratHouse_open.png";
         }else{
         icon.src="images/ladyratHouse_closed.png";
         }
 
-
+/////////////////parallax for Rinrin and Mouse at Lady Rat's House
+              waving.style.top = 3500 + y * -.30 + "px";
 
 
 ///////stickyCat/////////////////////////////////////////////
@@ -53,7 +53,6 @@ window.onscroll = function(){
        } else {
        stickyCat.style.top = "4000px" ;
        }
-
        //if scrolled > 3800px sticky cat visible
        if( y > 3800){
       stickyCat.style.opacity = 1;
@@ -62,13 +61,17 @@ window.onscroll = function(){
       }
 
       //after 5300px cat not visible
-      if( y < 5300){
-     stickyCat.style.opacity = 1;
-     }else {
+      if( y > 5400){
      stickyCat.style.opacity = 0;
+     }else {
+     stickyCat.style.opacity = 1;
      }
 
+     // this moves Rinrin across screen in front of Cat
+           // shocked.style.left = - 2000 + y *.50 + "px";
 
+    ////////this moves rin across as he escaped from cat
+      escape.style.left = -2000 + y *.35 + "px";
 
 
 }
