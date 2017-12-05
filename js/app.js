@@ -8,6 +8,9 @@ var grassMouse = document.getElementById("grassMouse");
 var waving = document.getElementById("waving");
 var shocked = document.getElementById("shocked");
 var escape = document.getElementById("escape");
+var escapeBackground = document.getElementById("escapeBackground");
+var rock4 = document.getElementById("rock4");
+var stickyRin = document.getElementById("stickyRin");
 window.onscroll = function(){
 
       var y = window.pageYOffset;
@@ -18,7 +21,6 @@ window.onscroll = function(){
 
 ////////////this makes Rinrin run across screen
         trippingRin.style.left =200 + y *.30 + "px";
-
 
 
       /////////////Rinrin and Mouse meet--PARALLAX////
@@ -67,11 +69,27 @@ window.onscroll = function(){
      stickyCat.style.opacity = 1;
      }
 
-     // this moves Rinrin across screen in front of Cat
-           // shocked.style.left = - 2000 + y *.50 + "px";
 
-    ////////this moves rin across as he escaped from cat
+    ////////this moves Rinin across from the left as he escapes from cat
       escape.style.left = -2000 + y *.35 + "px";
 
+//////////this moves Rinrin across from the right
+      escape2.style.left = 2800 - y *.35 + "px";
+//////////this moves background across from the left
+      escapeBackground.style.left =-600 + y *.10 + "px";
+      grass5.style.left = 2000 - y *.20 + "px";
+      rock4.style.left = 2000 - y *.20 + "px";
+
+      // Rinrin sticks to the top of viewport, to his inevitable doom
+      if(y > 8300){
+      stickyRin.style.top = y + "px";
+    }else{
+      stickyRin.style.top = "8300px";
+    }
+    if( y > 9200){
+   stickyRin.style.opacity = 0;
+   }else {
+   stickyRin.style.opacity = 1;
+   }
 
 }
