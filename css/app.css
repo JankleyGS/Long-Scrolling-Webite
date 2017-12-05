@@ -18,7 +18,7 @@
   width:90px;
   height:70px;
   padding:10px;
-  position:fixed;
+  position:absolute;
   left:70px;
   background-color: #7888BC;
   z-index:11;
@@ -29,15 +29,17 @@
 #nav:hover{
   color:#000000;
 }
-h2{
+#title{
+  position:relative;
+  margin:0 auto;
+  top:50px;
   color:#7888BC;
   text-align: center;
   font-family: 'Josefin Slab', serif;
 }
 p{
-  padding:50px;
-  position:absolute;
-  text-align: justify;
+  padding:10px;
+  position:relative;
   top: 100px;
   color:#000928;
   font-family: 'Sorts Mill Goudy', serif;
