@@ -1,6 +1,4 @@
-#body{
-  background-color: #ffffff;
-}
+
 #background{
   /*border:2px solid #000000;*/
   width:768px;
@@ -8,7 +6,41 @@
   margin:0 auto;
   position:relative;
   background-image:url("../images/paper.png");
-
+}
+#about{
+  width:768px;
+  height:700px;
+  margin:0 auto;
+  position:relative;
+  background-image:url("../images/paper.png");
+}
+#nav{
+  width:90px;
+  height:70px;
+  padding:10px;
+  position:fixed;
+  left:70px;
+  background-color: #7888BC;
+  z-index:11;
+  position:fixed;
+  color:#ffffff;
+  font-family: 'Josefin Slab', serif;
+}
+#nav:hover{
+  color:#000000;
+}
+h2{
+  color:#7888BC;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+}
+p{
+  padding:50px;
+  position:absolute;
+  text-align: justify;
+  top: 100px;
+  color:#000928;
+  font-family: 'Sorts Mill Goudy', serif;
 }
 #heading{
 width:768px;
