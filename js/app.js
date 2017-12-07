@@ -11,6 +11,7 @@ var escape = document.getElementById("escape");
 var escapeBackground = document.getElementById("escapeBackground");
 var rock4 = document.getElementById("rock4");
 var stickyRin = document.getElementById("stickyRin");
+
 window.onscroll = function(){
 
       var y = window.pageYOffset;
